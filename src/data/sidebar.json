@@ -1,0 +1,90 @@
+[
+    {
+        "title": "General",
+        "icon": "bi-gear-fill",
+        "childrens": [
+            {
+                "title": "Dashboard",
+                "icon":"bi-house-fill",
+                "path":"/dashboard"
+            },
+            {
+                "title": "About",
+                "icon": "bi-info-circle-fill",
+                "path": "/about"
+            },
+            {
+                "title": "Contact",
+                "icon": "bi-phone-fill",
+                "childrens": [
+                    {
+                        "title": "Facebook",
+                        "icon": "bi-facebook"
+                    },
+                    {
+                        "title": "Twitter",
+                        "icon": "bi-twitter"
+                    },
+                    {
+                        "title": "Instagram",
+                        "icon": "bi-instagram"
+                    }
+                ]
+            },
+            {
+                "title": "Request",
+                "icon": "bi-envelope"
+            }
+        ]
+    },
+    {
+        "title": "Experiments",
+        "icon": "bi-person-workspace",
+        "childrens":[
+            {
+                "title": "Chemistry",
+                "icon": "bi-clipboard2-data",
+                "path": "/chemistry"
+            },
+            {
+                "title": "Physics",
+                "icon": "bi-clipboard2-data",
+                "path": "/physics"
+            }
+        ]
+    },
+    {
+        "title": "Account",
+        "icon": "bi-info-circle-fill",
+        "childrens": [
+            
+            {
+                "title": "Reset Password",
+                "path": "/sendpasswordresetemail"
+            },
+            
+            {
+                "title": "Logout",
+                "path": "/login"
+            }
+        ]
+    },
+    {
+        "title": "Profile",
+        "icon": "bi-person-fill",
+        "path": "/profile"
+            
+        
+    },
+    
+    {
+        "title": "Support",
+        "icon": "bi-question-circle-fill",
+        "path": "/support"
+    },
+    {
+        "title": "Report Bug",
+        "icon": "bi-bug",
+        "path": "/report-bug"
+    }
+]

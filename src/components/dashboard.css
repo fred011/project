@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,body{
+    height: 100vh;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+.dashboard{
+    width: 100%;
+}
+.main{
+    display: flex;
+    height: 91.5vh;
+}
+
+.container{
+    flex-grow: 1;
+    background-image: url('../images/der.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(243, 216, 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .title{
+    font-size: 3em;
+    color:#5f0285 ;
+  }
+  .info{
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 1.5em;
+    color: #5f0285;
+    padding-top: 10px;
+  }
+  .btn{
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    padding: .75em 1em;
+    font-size: .7em;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 7px;
+    background-color: rgb(151, 4, 156);
+    color: #000;
+  }
+  
+  .sidebar{
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #a607e6;
+    height: 100%;
+    overflow: auto;
+  }
+  .sidebar-item{
+    padding: .75em 1em;
+    display: block;
+    transition: background-color .15s;
+    border-radius: 5px;
+  }
+  .sidebar-item:hover{
+    background-color: rgba(255, 255, 255, .1);
+  }
+  
+  .sidebar-title{
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+  }
+  .sidebar-title span i{
+    display: inline-block;
+    width: 1.5em;
+  }
+  .sidebar-title .toggle-btn{
+    cursor: pointer;
+    transition: transform .3s;
+  }
+  .sidebar-item.open > .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+  }
+  .sidebar-content{
+    padding-top: .25em;
+    height: 0;
+    overflow: hidden;
+  }
+  .sidebar-item.open > .sidebar-content{
+    height: auto;
+  }
+  
+  .sidebar-item.plain{
+    color: #fff;
+    text-decoration: none;
+  }
+  .sidebar-item.plain:hover{
+    text-decoration: underline;
+  }
+  .sidebar-item.plain i{
+    display: inline-block;
+    width: 1.7em;
+  }

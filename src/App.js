@@ -1,5 +1,4 @@
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginReg from "./components/pages/auth/LoginReg";
 import ResetPassword from "./components/pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./components/pages/auth/SendPasswordResetEmail";
@@ -18,8 +17,8 @@ import Chemistry from "./components/pages/Chemistry";
 import Physics from "./components/pages/Physics";
 import Rainbow from "./components/pages/Rainbow";
 import Hot from "./components/pages/Hot";
-import Moment from "./components/pages/Moment"
-import CarCollisionSimulation from "./components/pages/CarCollisionSimulation"
+import Moment from "./components/pages/Moment";
+import CarCollisionSimulation from "./components/pages/CarCollisionSimulation";
 import Acids from "./components/pages/Acids";
 import First from "./components/pages/First";
 import Second from "./components/pages/Second";
@@ -28,16 +27,14 @@ import Bonds from "./components/pages/Bonds";
 import Endo from "./components/pages/Endo";
 import Thermite from "./components/pages/Thermite";
 import Water from "./components/pages/Water";
-import Heart from "./components/pages/Heart"
+import Heart from "./components/pages/Heart";
 import Paper from "./components/pages/Paper";
 import ElectroChem from "./components/pages/ElectroChem";
-
-
 
 const App = () => {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -55,7 +52,10 @@ const App = () => {
           <Route path="/rainbow" element={<Rainbow />} />
           <Route path="/hot" element={<Hot />} />
           <Route path="/moment" element={<Moment />} />
-          <Route path="/CarCollisionSimulation" element={<CarCollisionSimulation />} />
+          <Route
+            path="/CarCollisionSimulation"
+            element={<CarCollisionSimulation />}
+          />
           <Route path="/first" element={<First />} />
           <Route path="/second" element={<Second />} />
           <Route path="/third" element={<Third />} />
@@ -76,8 +76,7 @@ const App = () => {
           <Route path="/acids" element={<Acids />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
-        
-      </Router>
+      </BrowserRouter>
     </>
   );
 };

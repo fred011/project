@@ -2,6 +2,7 @@ import { Card, CardActions, CardContent, CardMedia, Grid, Typography } from "@mu
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 import '../Exp.css'
+import { Container } from "react-bootstrap";
 
 const Grd = () => {
   const navigate = useNavigate();
@@ -25,8 +26,9 @@ const Grd = () => {
 
 
   return (
+    <Container>
     <div className="contain">
-      <Grid container spacing={3}>
+      <Grid className="cards">
         <Grid item xs={3}>
           <Card className="card" sx={{ maxWidth: 280 }}>
             <CardMedia
@@ -101,6 +103,7 @@ const Grd = () => {
         </Grid>
       </Grid>
     </div>
+    </Container>
   );
 };
 

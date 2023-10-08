@@ -21,7 +21,7 @@ body{
     height: 91.5vh;
 }
 
-.container{
+.containe{
     flex-grow: 1;
     background-image: url('../images/der.png');
     background-size: cover;

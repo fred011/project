@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Navy from "../Navy";
 import SideBar from "../SideBar.jsx";
 import emailjs from "emailjs-com";
+import { Container } from "react-bootstrap";
 
 function Request() {
   const form = useRef();
@@ -33,7 +34,7 @@ function Request() {
       </div>
       <div className="hello">
         <SideBar />
-        <div>
+        <Container>
           <div
             className="container border"
             style={{
@@ -51,7 +52,7 @@ function Request() {
               style={{ margin: "25px 85px 75px 100px" }}
               onSubmit={sendEmail}
             >
-              <label>Name</label>
+              <label style={{color: "white"}}>Name</label>
               <input
                 type="text"
                 name="name"
@@ -59,14 +60,14 @@ function Request() {
                 placeholder="Your Name"
               />
 
-              <label>Email</label>
+              <label style={{color: "white"}}>Email</label>
               <input
                 type="text"
                 name="intructors_email"
                 className="form-control"
                 placeholder="Your Email"
               />
-              <label>Email</label>
+              <label style={{color: "white"}}>Email</label>
               <input
                 type="text"
                 name="user_email"
@@ -74,7 +75,7 @@ function Request() {
                 placeholder="Instructor`s Email"
               />
 
-              <label>Message</label>
+              <label style={{color: "white"}}>Message</label>
               <textarea
                 name="message"
                 rows="4"
@@ -89,7 +90,7 @@ function Request() {
               />
             </form>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

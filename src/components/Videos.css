@@ -1,0 +1,14 @@
+.video{
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-top: 8px;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}

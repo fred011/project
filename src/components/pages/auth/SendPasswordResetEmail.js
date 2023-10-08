@@ -15,13 +15,20 @@ const PasswordResetEmail = () => {
     const actualData = {
       email: data.get('email'),
     }
-    if (actualData.email) {
+    if (actualData.email == 0) {
+      setError({ status: true, msg: "Enter Your Email ", type: "error" });
+      alert("Enter Your Email!");
+    } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(actualData.email)) {
+      setError({ status: true, msg: "Enter A Valid Email", type: "error" });
+      return;
+    } else if (actualData.email) {
       console.log(actualData);
-      document.getElementById('password-reset-email-form').reset()
-      setError({ status: true, msg: "Password Reset Email Sent. Check Your Email !!", type: 'success' })
-    } else {
-      setError({ status: true, msg: "Enter Your Email ", type: 'error' })
-      alert('Enter Your Email!');
+      document.getElementById("password-reset-email-form").reset();
+      setError({
+        status: true,
+        msg: "Password Reset Email Sent. Check Your Email !!",
+        type: "success",
+      });
     }
      auth.sendPasswordResetEmail( actualData.email).then(data=>{
       alert('Reset Password Email Sent!')

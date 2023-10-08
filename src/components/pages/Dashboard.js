@@ -22,7 +22,7 @@ function Dashboard() {
       <div>
         <div className="main">
           <SideBar />
-          <div className="container">
+          <div className="containe">
             <h1 className="title">Experiments</h1>
             <p className="info">Let`s watch Chemistry Experiments Videos</p>
             <button className="btn" onClick={handleClick}>Chemistry</button>

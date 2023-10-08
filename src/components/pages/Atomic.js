@@ -1,28 +1,26 @@
-import React from "react";
+import React from 'react'
 import { Container } from "react-bootstrap";
 import ReactPlayer from "react-player";
 
-function Thermite() {
+export default function Atomic() {
   return (
     <Container>
-      <h1>Thermite Reactions</h1>
+      <h1>Atomic Combinations</h1>
 
       <h2>1st</h2>
       <div className="video">
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=o8gapa8ibK0"
+          url="https://youtu.be/fcb8nbwkaR0"
           controls
         />
       </div>
       <h2>2nd</h2>
       <div className="video">
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=8ZoiKkepfrM"
+          url="https://youtu.be/7es9FYR_Vjk"
           controls
         />
       </div>
     </Container>
-  );
+  )
 }
-
-export default Thermite;

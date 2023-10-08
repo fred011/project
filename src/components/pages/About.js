@@ -3,6 +3,7 @@ import SideBar from "../SideBar.jsx";
 import Navy from "../Navy.js";
 import "../dashboard.css";
 import { useNavigate } from "react-router-dom";
+import "../About.css";
 
 function About() {
   const navigate = useNavigate();
@@ -19,10 +20,13 @@ function About() {
         <SideBar />
 
         <div className="dex">
-          <h1 style={{ textDecoration: "underline" }}>
-            Simlab: Science Education Hub
-          </h1>
-          <div className="hello">
+          <h1>Simlab: Science Education Hub</h1>
+          <div className="image">
+              <img
+                src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg"
+                alt="science pic"
+              />
+            </div>
             <h3>
               Welcome to Simlab, your one-stop destination for high-quality
               physics and chemistry experiments and lessons designed exclusively
@@ -31,17 +35,11 @@ function About() {
               students like you to explore the fascinating world of physics and
               chemistry with confidence.
             </h3>
-            <img
-              src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg"
-              alt="science pic"
-            />
-          </div>
+            
+          
           <h1 style={{ textDecoration: "underline" }}>Our Mission</h1>
-          <div className="hello">
-            <img
-              src="https://media.istockphoto.com/id/1207700784/photo/dropping-yellow-liquid-sample-to-test-tube-with-microscope-medical-pharmaceutical-and.jpg?s=612x612&w=0&k=20&c=T3j492-zln7vze4o5xY8jdjrjhYxiPpWpxg4VOrJ8qs="
-              alt="lab pic"
-            />
+          
+            
             <h4 style={{ marginLeft: "20px" }}>
               Our mission is simple yet profound: to ignite your passion for
               science by providing you with a comprehensive collection of video
@@ -50,7 +48,13 @@ function About() {
               chemistry with the right resources and support, and we're here to
               provide just that.
             </h4>
-          </div>
+            <div className="image">
+              <img
+                src="https://media.istockphoto.com/id/1207700784/photo/dropping-yellow-liquid-sample-to-test-tube-with-microscope-medical-pharmaceutical-and.jpg?s=612x612&w=0&k=20&c=T3j492-zln7vze4o5xY8jdjrjhYxiPpWpxg4VOrJ8qs="
+                alt="lab pic"
+              />
+            </div>
+          
           <h1 style={{ textDecoration: "underline" }}>What Sets Us Apart</h1>
 
           <h3 style={{ marginBottom: "20px" }}>

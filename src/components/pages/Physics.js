@@ -42,44 +42,57 @@ function Physics() {
     e.preventDefault();
     navigate("/third");
   }
+  function HandleW(e) {
+    e.preventDefault();
+    navigate("/wavefront");
+  }
+  function HandleGeo(e) {
+    e.preventDefault();
+    navigate("/geometric");
+  }
+  function HandleV(e) {
+    e.preventDefault();
+    navigate("/vertical");
+  }
+  function HandleWo(e) {
+    e.preventDefault();
+    navigate("/work");
+  }
+  function HandleDo(e) {
+    e.preventDefault();
+    navigate("/doppler");
+  }
+  function HandleEle(e) {
+    e.preventDefault();
+    navigate("/circuit");
+  }
+
 
   return (
     <div>
       <Navy />
       <div className="hero">
-        <div>
+        <div className="hello">
           <SideBar />
-        </div>
+        
+        <section>
         <div className="contain">
-          <h1>Physics Lessons</h1>
-          <h2
-            style={{
-              textAlign: "center",
-              marginBottom: "25px",
-              textDecoration: "underline",
-            }}
-          >
-            {" "}
-            Educational
-          </h2>
-
-          <Grid container spacing={2.5}>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+          <h1>Physical Sciences Lessons/Experiments</h1>
+        
+          <Grid className="cards" >
+            <Grid  item xs={3} md={2.4}>
+              <Card className="card"  sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="1st law"
-                  height="205"
+                  height="215"
                   image="https://media.geeksforgeeks.org/wp-content/uploads/20210307125042/Firstlawofmotion.PNG"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
                     Newton's First Law
                   </Typography>
-                  <h8>
-                    An object at rest will remain at rest, unless a net force
-                    acts on it.
-                  </h8>
+                  
                 </CardContent>
                 <a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-1/Newton-s-First-Law">
                   More info
@@ -91,20 +104,17 @@ function Physics() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="2nd law"
-                  height="197"
+                  height="215"
                   image="https://labster-image-manager.s3.amazonaws.com/v2/NL2/54160233-dc7b-4be0-83aa-c977ee107370/NL2_FinalConcept.en.x512.png"
                 />
                 <CardContent>
                   <h5>Newton's Second law</h5>
-                  <h9>
-                    The acceleration of an object is directly proportional to
-                    the net force and inversely proportional to its mass.
-                  </h9>
+                  
                 </CardContent>
                 <a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-3/Newton-s-Second-Law">
                   More info
@@ -116,22 +126,19 @@ function Physics() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="3rd law"
-                  height="177"
+                  height="215"
                   image="https://stickmanphysics.com/wp-content/uploads/2020/10/Newtons-3rd-wall.jpg"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
                     Newton`s Third Law
                   </Typography>
-                  <p>
-                    Newton's third law simply states that for every action there
-                    is an equal and opposite reaction.
-                  </p>
+                  
                 </CardContent>
                 <a href="https://www.physicsclassroom.com/class/newtlaws/Lesson-4/Newton-s-Third-Law">
                   More info
@@ -143,23 +150,19 @@ function Physics() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="momentum"
-                  height="140"
+                  height="215"
                   image="https://assets.entrepreneur.com/content/3x2/2000/20190326162012-Keep-Up-The-Momentum--4000pxW-X-2670pxH.jpeg"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Momentum
                   </Typography>
-                  <p>
-                    Momentum can be defined as "mass in motion." All objects
-                    have mass; so if an object is moving, then it has momentum -
-                    it has its mass in motion.
-                  </p>
+                  
                 </CardContent>
                 <a href="https://www.physicsclassroom.com/class/momentum">
                   More info
@@ -173,9 +176,9 @@ function Physics() {
             </Grid>
           </Grid>
 
-          <Grid container spacing={2.5}>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+          <Grid className="cards">
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="1st law"
@@ -183,7 +186,7 @@ function Physics() {
                   image="https://www.sciencefacts.net/wp-content/uploads/2020/11/Electrostatic-Force.jpg"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography gutterBottom variant="h5" component="div">
                     Electrostatic
                   </Typography>
                 </CardContent>
@@ -197,12 +200,12 @@ function Physics() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="2nd law"
-                  height="205"
+                  height="215"
                   image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2N-npFNkn-aupWdt-RxPSV2jkCg9Ew-UUw&usqp=CAU"
                 />
                 <CardContent>
@@ -218,56 +221,151 @@ function Physics() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
                 <CardMedia
                   component="img"
                   alt="3rd law"
-                  height="195"
-                  image="https://images.collegedunia.com/public/image/8cc6c98db2a013737f5e2fd3135d8b6b.jpeg?tr=w-400,h-400,c-force"
+                  height="215"
+                  image="https://i.stack.imgur.com/DZl6N.jpg"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    Electrochemical Reactions
+                  <Typography gutterBottom variant="h5" component="div">
+                    Wavefronts
                   </Typography>
                 </CardContent>
-                <a href="https://www.britannica.com/science/electrochemical-reaction">
+                <a href="https://byjus.com/physics/wavefront/">
                   More info
                 </a>
                 <CardActions>
-                  <button className="bttn" onClick={HandleER}>
+                  <button className="bttn" onClick={HandleW}>
                     Play
                   </button>
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item xs={3}>
-              <Card className="card" sx={{ maxWidth: 280 }}>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420}}>
                 <CardMedia
                   component="img"
                   alt="momentum"
-                  height="140"
-                  image="https://assets.entrepreneur.com/content/3x2/2000/20190326162012-Keep-Up-The-Momentum--4000pxW-X-2670pxH.jpeg"
+                  height="215"
+                  image="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2021/02/09052118/Geometric-Optics.png"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Momentum
+                    Geometric Optics
                   </Typography>
                 </CardContent>
-                <a href="https://www.physicsclassroom.com/class/momentum">
+                <a href="https://www.sciencedirect.com/topics/physics-and-astronomy/geometrical-optics">
                   More info
                 </a>
                 <CardActions>
-                  <button className="bttn" onClick={HandleM}>
+                  <button className="bttn" onClick={HandleGeo}>
                     Play
                   </button>
                 </CardActions>
               </Card>
             </Grid>
           </Grid>
+          <Grid className="cards">
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
+                <CardMedia
+                  component="img"
+                  alt="1st law"
+                  height="215"
+                  image="https://cms-media.bartleby.com/wp-content/uploads/sites/2/2021/08/25182602/Scene-02-2.jpg"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Vertical Projectile
+                  </Typography>
+                </CardContent>
+                <a href="https://mycourses.co.za/vertical-projectile-motion-notes-for-grade-12/">
+                  More info
+                </a>
+                <CardActions>
+                  <button className="bttn" onClick={HandleV}>
+                    Play
+                  </button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
+                <CardMedia
+                  component="img"
+                  alt="2nd law"
+                  height="215"
+                  image="https://teleskola.mt/wp-content/uploads/elementor/thumbs/work-energy-and-power-3f6abe4e363999a2b0376072a341dfa4-opilh2ppg2n39nsbo685tlmfyzx00v8n7cms7n14hs.png"
+                />
+                <CardContent>
+                  <h5>work energy and power</h5>
+                </CardContent>
+                <a href="https://byjus.com/physics/work-energy-power/">
+                  More info
+                </a>
+                <CardActions>
+                  <button className="bttn" onClick={HandleWo}>
+                    Play
+                  </button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
+                <CardMedia
+                  component="img"
+                  alt="3rd law"
+                  height="215"
+                  image="https://audiocardio.com/wp-content/uploads/2020/11/The-Doppler-Effect.png"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Doppler Effect
+                  </Typography>
+                </CardContent>
+                <a href="https://byjus.com/physics/doppler-effect/">
+                  More info
+                </a>
+                <CardActions>
+                  <button className="bttn" onClick={HandleDo}>
+                    Play
+                  </button>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={3} md={2.4}>
+              <Card className="card" sx={{ maxWidth: 280, height: 420}}>
+                <CardMedia
+                  component="img"
+                  alt="momentum"
+                  height="215"
+                  image="https://www.wikihow.com/images/thumb/6/67/Make-a-Simple-Electrical-Circuit-Step-6-Version-2.jpg/v4-460px-Make-a-Simple-Electrical-Circuit-Step-6-Version-2.jpg.webp"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Electric Circuits
+                  </Typography>
+                </CardContent>
+                <a href="https://www.britannica.com/technology/electric-circuit">
+                  More info
+                </a>
+                <CardActions>
+                  <button className="bttn" onClick={HandleEle}>
+                    Play
+                  </button>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grid>
+          </div>
+          </section>
+          </div>
         </div>
       </div>
-    </div>
+   
   );
 }
 

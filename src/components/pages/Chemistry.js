@@ -12,6 +12,26 @@ function Chemistry() {
     e.preventDefault();
     navigate('/rainbow')
   }
+  function HandleEn(e){
+    e.preventDefault();
+    navigate('/endo')
+  }
+  function HandleTi(e){
+    e.preventDefault();
+    navigate('/titration')
+  }
+  function HandleT(e){
+    e.preventDefault();
+    navigate('/thermite')
+  }
+  function HandleW(e){
+    e.preventDefault();
+    navigate('/water')
+  }
+  function HandleB(e){
+    e.preventDefault();
+    navigate('/bonds')
+  }
   function HandleA(e){
     e.preventDefault();
     navigate('/rate')
@@ -28,6 +48,10 @@ function Chemistry() {
     e.preventDefault();
     navigate('/ideal')
   }
+  function HandleOx(e){
+    e.preventDefault();
+    navigate('/oxidation')
+  }
   function HandleG(e){
     e.preventDefault();
     navigate('/heart')
@@ -36,24 +60,38 @@ function Chemistry() {
     e.preventDefault();
     navigate('/paper')
   }
+  function HandleIn(e){
+    e.preventDefault();
+    navigate('/chem')
+  }
+  function HandleAc(e){
+    e.preventDefault();
+    navigate('/acids')
+  }
+  function HandleAt(e){
+    e.preventDefault();
+    navigate('/atomic')
+  }
+
+
   return (
     <div>
       <Navy />
       <div className="hero">
       
-      <div >
+      <div className="hello">
         <SideBar />
-      </div>
-      <div>
-      <h1>Chemistry Lessons</h1>
-      <div>
-      <Grid container spacing={3}>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
+      <section>
+      <div className='contain'>
+      <h1>Chemistry Lessons/Experiments</h1>
+      
+      <Grid className='cards'>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420 }}>
             <CardMedia
               component="img"
               alt="green iguana"
-              height="170"
+              height="215"
               image="http://www.adichemistry.com/physical/kinetics/factors/maxwellcurve.png"
             />
             <CardContent>
@@ -67,8 +105,8 @@ function Chemistry() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -80,14 +118,14 @@ function Chemistry() {
                 Chemical equilibrium
               </Typography>
             </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
+            <a href='https://www.britannica.com/science/chemical-equilibrium'>More info</a>
             <CardActions>
               <button className="bttn" onClick={HandleE}>Play</button>
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -105,8 +143,8 @@ function Chemistry() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -120,119 +158,195 @@ function Chemistry() {
             </CardContent>
             <a href='https://www.sciencelearn.org.nz/resources/3019-acids-and-bases-introduction'>More info</a>
             <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
+              <button className="bttn" onClick={HandleAc}>Play</button>
             </CardActions>
           </Card>
         </Grid>
         </Grid>
-      </div>
-            <div>
-      <Grid container spacing={3}>
+      
+            
+      <Grid className='cards'>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://www.yaaka.cc/wp-content/uploads/2019/03/INTRODUCTION-TO-ORGANIC-CHEMISTRY.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+              Introduction to Organic Chemistry
+              </Typography>
+            </CardContent>
+            <a href='https://courses.lumenlearning.com/suny-potsdam-organicchemistry/chapter/1-1-introduction-to-organic-chemistry/'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleIn}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://knowledge.carolina.com/wp-content/uploads/2022/04/shutterstock_1421398136-e1680005890118-1170x780.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Titration
+              </Typography>
+            </CardContent>
+            <a href='https://www.britannica.com/science/titration'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleTi}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://www.the-mad-scientist.net/uploads/1/2/2/1/12216247/7567026_orig.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Oxidation and Reduction
+              </Typography>
+            </CardContent>
+            <a href='https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Redox_Chemistry/Definitions_of_Oxidation_and_Reduction'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleOx}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280, height: 420  }}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://watv.org/wp-content/uploads/2022/01/atomic-combination-3-1.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Atomic Combinations
+              </Typography>
+            </CardContent>
+            <a href='https://www.siyavula.com/read/za/physical-sciences/grade-11/atomic-combinations/03-atomic-combinations-05'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleAt}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        </Grid>
+      
+
+        <Grid className="cards">
         <Grid item xs={3}>
           <Card className="card" sx={{ maxWidth: 280 }}>
             <CardMedia
               component="img"
               alt="green iguana"
               height="170"
-              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
+              image="https://online-learning-college.com/wp-content/uploads/2022/06/Exothermic-and-endothermic-reactions.jpg"
             />
             <CardContent>
               <Typography gutterBottom variant="h7" component="div">
-                
+                Endo/Exothermic Reactions
               </Typography>
             </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
+            <a href='https://byjus.com/chemistry/endothermic-exothermic-reactions-difference/'>More info</a>
             <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="170"
-              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h7" component="div">
-                Rainbow Flames
-              </Typography>
-            </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
-            <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="170"
-              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h7" component="div">
-                Rainbow Flames
-              </Typography>
-            </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
-            <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="170"
-              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h7" component="div">
-                Rainbow Flames
-              </Typography>
-            </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
-            <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
-            </CardActions>
-          </Card>
-        </Grid>
-        </Grid>
-      </div>
-      <h1>Chemistry Experiments</h1>
-      <h2 style={{textAlign: 'center', marginBottom:'25px',textDecoration:'underline' }}> Educational</h2>
-      <Grd />
-      <h2 style={{textAlign: 'center', marginBottom:'25px',marginTop:'15px' ,textDecoration:'underline' }}> Fun Experiments</h2>
-      <div className='contain'>
-      <Grid container spacing={3}>
-        <Grid item xs={3}>
-          <Card className="card" sx={{ maxWidth: 280 }}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="170"
-              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h7" component="div">
-                Rainbow Flames
-              </Typography>
-            </CardContent>
-            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
-            <CardActions>
-              <button className="bttn" onClick={HandleR}>Play</button>
+              <button className="bttn" onClick={HandleEn}>Play</button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item xs={3}>
           <Card className="card" sx={{maxWidth: 280}}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://www.chemistrylearner.com/wp-content/uploads/2022/05/Thermite-Reaction.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Thermite Reactions
+              </Typography>
+            </CardContent>
+            <a href='https://byjus.com/question-answer/explain-thermite-reaction-give-example-mention-its-uses/'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleT}>play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+        <Card className="card" sx={{maxWidth: 280}}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://images.nagwa.com/figures/explainers/687137938294/3.svg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Water and Alkali Metals
+              </Typography>
+            </CardContent>
+            <a href='https://ehs.stanford.edu/reference/information-alkali-metals'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleW}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+        <Card className="card" sx={{maxWidth: 280}}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://study.com/cimages/videopreview/videopreview-small/chemical-bonds-ionic-vs-covalent1_170242.jpg"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Break apart covalent bonds
+              </Typography>
+            </CardContent>
+            <a href='http://www.teachingwithoutchairs.com/2019/06/chemistry-class-covalent-bonds.html'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleB}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+      </Grid>
+      
+      
+      <Grid className='cards'>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{ maxWidth: 280 , height: 420 }}>
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              height="170"
+              image="https://sciencenotes.org/wp-content/uploads/2020/04/flamecolors.png"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h7" component="div">
+                Rainbow Flames
+              </Typography>
+            </CardContent>
+            <a href='https://melscience.com/US-en/articles/colored-flame-experiment/'>More info</a>
+            <CardActions>
+              <button className="bttn" onClick={HandleR}>Play</button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item xs={3} md={2.4}>
+          <Card className="card" sx={{maxWidth: 280, height: 420 }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -250,8 +364,8 @@ function Chemistry() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-        <Card className="card" sx={{maxWidth: 280}}>
+        <Grid item xs={3} md={2.4}>
+        <Card className="card" sx={{maxWidth: 280, height: 420 }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -269,8 +383,8 @@ function Chemistry() {
             </CardActions>
           </Card>
         </Grid>
-        <Grid item xs={3}>
-        <Card className="card" sx={{maxWidth: 280}}>
+        <Grid item xs={3} md={2.4}>
+        <Card className="card" sx={{maxWidth: 280, height: 420 }}>
             <CardMedia
               component="img"
               alt="green iguana"
@@ -289,8 +403,10 @@ function Chemistry() {
           </Card>
         </Grid>
       </Grid> 
+      
       </div>
-      </div>
+      </section>
+    </div>
     </div>
     </div>
   )

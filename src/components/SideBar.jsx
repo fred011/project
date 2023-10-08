@@ -53,8 +53,8 @@ const routes = [
   {
     
       
-        path: "/reset",
-        name: "Reset Password ",
+        path: "/change",
+        name: "Change Password ",
         icon: <MdLockReset />,
      
   },
@@ -118,7 +118,7 @@ const SideBar = ({ children }) => {
           className={`sidebar `}
         >
           <div className="top_section">
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {isOpen && (
                 <motion.h1
                   variants={showAnimation}
@@ -130,7 +130,7 @@ const SideBar = ({ children }) => {
                   Hello There
                 </motion.h1>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
 
             <div className="bars">
               <FaBars onClick={toggle} />

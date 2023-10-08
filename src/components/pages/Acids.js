@@ -1,43 +1,62 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from "react";
+import { Container } from "react-bootstrap";
+import ReactPlayer from "react-player";
 
 function Acids() {
   return (
-    <div>
-      <h2>Acids And Bases</h2>
-      <div className="red">
-        <div className="space">
-          <ReactPlayer
-            url="https://youtube.com/watch?v=FM2MpMbV0rw&si=BG7CO6ZlCLJwSr-w"
-            controls
-          />
-        </div>
-        <div>
-          <ReactPlayer
-            url="https://youtube.com/watch?v=owVZiKnnPME&si=yZQfJT8jHL0Wmemb"
-            controls
-          />
-        </div>
-
+    <Container>
+      <h1>Acids And Bases</h1>
+      <h2>1st</h2>
+      <div className="video">
+        <iframe
+          width="866"
+          height="487"
+          src="https://www.youtube.com/embed/FM2MpMbV0rw"
+          title="Acids and Bases - Basic Introduction - Chemistry"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+          allowfullscreen
+        ></iframe>
       </div>
-      <div className="red">
-        <div className="space">
-          <ReactPlayer
-            url="https://youtube.com/watch?v=AaYQ_ZiE7AY&si=AsLNy4EKlKpdl9kW"
-            controls
-          />
-        </div>
-        <div>
-          <ReactPlayer
-            url="https://youtube.com/watch?v=kJTCuRSeh6g&si=6kv2nAPT9BuOJDDB"
-            controls
-          />
-        </div>
-
+      <h2>2nd</h2>
+      <div className="video">
+        <iframe
+          width="866"
+          height="487"
+          src="https://www.youtube.com/embed/owVZiKnnPME"
+          title="Acids and Bases - Basic Introduction - Organic Chemistry"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+          allowfullscreen
+        ></iframe>
       </div>
-      
-    </div>
-  )
+
+      <h2>3rd</h2>
+      <div className="video">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/AaYQ_ZiE7AY"
+          title="How To Memorize The Strong Acids and Strong Bases"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>4th</h2>
+      <div className="video">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/kJTCuRSeh6g"
+          title="pH of Weak Acids and Bases - Percent Ionization - Ka &amp; Kb"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </Container>
+  );
 }
 
-export default Acids
+export default Acids;

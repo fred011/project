@@ -3,6 +3,7 @@ import LoginReg from "./components/pages/auth/LoginReg";
 import ResetPassword from "./components/pages/auth/ResetPassword";
 import SendPasswordResetEmail from "./components/pages/auth/SendPasswordResetEmail";
 import Contact from "./components/pages/Contact";
+import Change from "./components/pages/auth/Change";
 import About from "./components/pages/About";
 import Electro from "./components/pages/Electro";
 import Optic from "./components/pages/Optic";
@@ -30,6 +31,17 @@ import Water from "./components/pages/Water";
 import Heart from "./components/pages/Heart";
 import Paper from "./components/pages/Paper";
 import ElectroChem from "./components/pages/ElectroChem";
+import Wavefront from "./components/pages/Wavefront";
+import Geometric from "./components/pages/Geometric";
+import Chem from "./components/pages/chem";
+import ChangePassword from "./components/pages/auth/Change";
+import Titration from "./components/pages/Titration";
+import Oxidation from "./components/pages/Oxidation";
+import Atomic from "./components/pages/Atomic";
+import Vertical from "./components/pages/Vertical";
+import Work from "./components/pages/Work";
+import Doppler from "./components/pages/Doppler";
+import Circuit from "./components/pages/Circuit";
 
 const App = () => {
   return (
@@ -74,6 +86,17 @@ const App = () => {
           <Route path="/electro" element={<Electro />} />
           <Route path="/electrochem" element={<ElectroChem />} />
           <Route path="/acids" element={<Acids />} />
+          <Route path="/wavefront" element={<Wavefront />} />
+          <Route path="/geometric" element={<Geometric />} />
+          <Route path="/chem" element={<Chem />} />
+          <Route path="/change" element={<Change />} />
+          <Route path="/titration" element={<Titration/>} />
+          <Route path="/oxidation" element={<Oxidation/>} />
+          <Route path="/atomic" element={<Atomic/>} />
+          <Route path="/vertical" element={<Vertical/>} />
+          <Route path="/work" element={<Work/>} />
+          <Route path="/doppler" element={<Doppler/>} />
+          <Route path="/circuit" element={<Circuit/>} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>
